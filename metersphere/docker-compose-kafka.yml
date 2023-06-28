@@ -1,4 +1,4 @@
-version: "2.1"
+ersion: "2.1"
 services:
   kafka:
     image: '${MS_IMAGE_PREFIX}/kafka:3.4.0'
@@ -10,7 +10,7 @@ services:
       interval: 6s
       timeout: 10s
       retries: 50
-    restart: always
+    restart: no
     environment:
       KAFKA_ENABLE_KRAFT: 'yes'
       KAFKA_BROKER_ID: 1

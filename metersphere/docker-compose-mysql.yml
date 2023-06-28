@@ -19,7 +19,7 @@ services:
       - ms-mysql-data:/var/lib/mysql
     networks:
       - ms-network
-    restart: always
+    restart: no
   system-setting:
     depends_on:
       mysql:

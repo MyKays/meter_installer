@@ -21,7 +21,7 @@ services:
       - SCREEN_HEIGHT=1080
       - LANGUAGE=zh_CN.UTF-8
       - LANG=zh_CN.UTF-8
-    restart: always
+    restart: no
     healthcheck:
       test: ["CMD", "bash", "-c", "< /dev/tcp/localhost/5900"]
       interval: 6s
@@ -50,7 +50,7 @@ services:
       - SCREEN_HEIGHT=1080
       - LANGUAGE=zh_CN.UTF-8
       - LANG=zh_CN.UTF-8
-    restart: always
+    restart: no
     healthcheck:
       test: [ "CMD", "bash", "-c", "< /dev/tcp/localhost/5900" ]
       interval: 6s
@@ -66,7 +66,7 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
-    restart: always
+    restart: no
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:4444" ]
       interval: 6s
