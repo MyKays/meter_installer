@@ -1,6 +1,6 @@
 singleServerConfig:
-  password: ${REDIS_PASSWORD}
-  address: "redis://${REDIS_HOST}:${REDIS_PORT}"
+  password:
+  address: "redis://192.168.1.11:6379"
   database: 0
 threads: 8
 nettyThreads: 32
