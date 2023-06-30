@@ -1,4 +1,4 @@
-ersion: "2.1"
+version: "2.1"
 services:
   redis:
     image: ${MS_IMAGE_PREFIX}/redis:6.2.6

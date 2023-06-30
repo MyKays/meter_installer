@@ -1,4 +1,4 @@
-ersion: "2.1"
+version: "2.1"
 services:
   kafka:
     image: '${MS_IMAGE_PREFIX}/kafka:3.4.0'
