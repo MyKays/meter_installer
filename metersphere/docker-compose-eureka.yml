@@ -1,4 +1,4 @@
-version: "2.1"
+version: "2.16"
 services:
   eureka:
     image: ${MS_IMAGE_PREFIX}/eureka:${MS_IMAGE_TAG}

@@ -1,4 +1,4 @@
-version: "2.1"
+version: "2.16"
 services:
   system-setting:
     image: ${MS_IMAGE_PREFIX}/system-setting:${MS_IMAGE_TAG}

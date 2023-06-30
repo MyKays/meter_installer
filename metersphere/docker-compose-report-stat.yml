@@ -1,4 +1,4 @@
-version: "2.1"
+version: "2.16"
 services:
   report-stat:
     image: ${MS_IMAGE_PREFIX}/report-stat:${MS_IMAGE_TAG}

@@ -1,4 +1,4 @@
-version: "2.1"
+version: "2.16"
 services:
   performance-test:
     image: ${MS_IMAGE_PREFIX}/performance-test:${MS_IMAGE_TAG}
