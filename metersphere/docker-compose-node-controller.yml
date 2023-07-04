@@ -20,7 +20,7 @@ services:
       - ms-logs:${MS_BASE}/metersphere/logs
       - /var/run/docker.sock:/var/run/docker.sock
     mem_limit: ${MS_NC_MEM_LIMIT:-1073741824} # default 1g bytes
-    restart: no
+    restart: always
     networks:
       - ms-network
   
@@ -37,7 +37,7 @@ services:
       - '--path.procfs=/host/proc'
       - '--path.sysfs=/host/sys'
       - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
-    restart: no
+    restart: always
     mem_limit: 128m
     healthcheck:
       test: ["CMD", "nc", "-zv", "localhost", "9100"]

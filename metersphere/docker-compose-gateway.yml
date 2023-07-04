@@ -32,7 +32,7 @@ services:
       interval: 6s
       timeout: 10s
       retries: 50
-    restart: no
+    restart: always
     volumes:
       - ms-conf:${MS_BASE}/metersphere/conf
       - ms-logs:${MS_BASE}/metersphere/logs
